@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Control</title>
+    <link rel="stylesheet" href="styles_home.css">
+</head>
+<body>
+    <div class="barra-lateral">
+        <div class="perfil">
+            <p>Panel de Control</p>
+        </div>
+        <nav>
+            <ul>
+                <li class="submenu">
+                    <span class="menu-principal">📋 Inventario ▼</span>
+                    <ul class="submenu-opciones">
+                        <li id="agregar-producto">➕ Agregar Producto</li>
+                        <li id="ver-inventario">📜 Ver Inventario</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="contenido-principal">
+        <header>
+            <h2>Inventario</h2>
+            <div class="usuario-info">👤 Administrador</div>
+        </header>
+        <div id="seccion-agregar-producto">
+            <h3>Agregar Nuevo Producto</h3>
+            <form id="formulario-producto">
+                <label>Nombre del Producto</label>
+                <input type="text" id="nombre" required>
+                
+                <label>Cantidad</label>
+                <input type="number" id="cantidad" required>
+                
+                <label>Precio</label>
+                <input type="number" id="precio" required>
+    
+                <button type="submit">Agregar Producto</button>
+            </form>
+        </div>
+    
+        <div id="seccion-ver-inventario" style="display: none;">
+            <h3>Lista de Productos</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="lista-productos">
+                    <!-- Aquí se mostrarán los productos -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+
+    <script src="scripts_home.js"></script>
+</body>
+</html>

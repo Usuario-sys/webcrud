@@ -1,0 +1,181 @@
+body {
+    display: flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.barra-lateral {
+    width: 250px;
+    background: #2C3E50;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+}
+
+.perfil {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.activo {
+    background: #E67E22;
+    font-weight: bold;
+}
+
+.contenido-principal {
+    flex: 1;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ECF0F1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.usuario-info {
+    font-weight: bold;
+}
+
+/* Estilos para el CRUD */
+.contenedor {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #007BFF;
+    color: white;
+}
+
+/* Botones de acciones */
+.acciones button {
+    margin-right: 5px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Botón Editar */
+.editar {
+    background: #f39c12;
+    color: white;
+}
+
+.editar:hover {
+    background: #e67e22;
+}
+
+/* Botón Guardar */
+.guardar {
+    background: #2ecc71;
+    color: white;
+    display: none;
+}
+
+.guardar:hover {
+    background: #27ae60;
+}
+
+/* Botón Eliminar */
+.eliminar {
+    background: #e74c3c;
+    color: white;
+}
+
+.eliminar:hover {
+    background: #c0392b;
+}
+
+/* Inputs dentro de la tabla cuando se edita */
+td input {
+    width: 90%;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Submenú */
+.submenu {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.submenu-opciones {
+    display: none;
+    list-style: none;
+    padding-left: 15px;
+}
+
+.submenu-opciones li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.submenu-opciones li:hover {
+    background: #E67E22;
+    color: white;
+}
